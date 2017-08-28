@@ -1,5 +1,4 @@
-# One-Stock
-An inventory management system that provide our sellers an easier way to manage their stock
+# One Stock
 
 ## technology:
 
@@ -16,24 +15,43 @@ An inventory management system that provide our sellers an easier way to manage 
 actor: seller
 
 ### function:
-
 1. register
 2. login
 3. add stock
-	1. mobile phone
-	2. sock
-
-      1. product
-      2. manufacturer
-      3. price
-      4. cost
-      5. picture
-      6. amount
-	
-4. history
+4. show stock
+5. update stock
+6. history
 	1. generate report
-5. subscription (weekly report)
-6. account
+7. subscription (weekly report)
+8. account
+
+
+### 1. register
+
+
+### 2. login
+
+
+### 3. Add Stock
+1. mobile phone
+2. sock
+
+1. product
+2. manufacturer
+3. price
+4. cost
+5. picture
+6. amount
+
+
+
+### 4. show stock
+
+
+### 5. update stock
+
+
+### 6. history
 
 
 
