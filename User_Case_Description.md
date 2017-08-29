@@ -28,7 +28,7 @@
 
 - Precondition
 	1. User has successfully connected to our website
-	2. User should not have an existing account | 
+	2. User should not have an existing account
 
 - Postcondition
 	1. Account successfully created
@@ -36,7 +36,7 @@
 
 - Normal flow 	
 	1. User inputs required fields in the Registration Page
-	- User input the captcha information
+	2. User input the captcha information
 	- System validate all the input
 	- Successfully created an account with inactive status
 	- System send a link via the input email
