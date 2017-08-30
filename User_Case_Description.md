@@ -47,3 +47,33 @@ Alternative Flow | **3a invalid Input** <br/> 1.The system prompts for re-enter 
 - Username
 - Password
 - Status
+
+
+
+
+**Target Customer**
+- Individual Seller (SellerInfo)
+
+
+Use Case ID | 2
+:---------- | :-
+Use Case Name | Login
+Primary Actor | User
+Secondary Actor | None
+Description | Allow user to login into our system
+Pre-Condition | Owns an “active” user account
+Post-Condition | Login successfully and redirect to user homepage
+Normal Flow | 1. User input username and password<br/>2. User input the captcha information<br/>3. System verify inputs<br/>4. Successfully login to One-Stock<br/>5. Redirect to user homepage
+Alternative Flow  | **3a. Invalid input**<br/>1. System prompt “Invalid username/password”<br/>2. Use case resume at main flow step 1<br/>**3b. Invalid input 3 times for valid username**<br/>1. System prompt “Invalid username/password”<br/>2. System change account status to “Lock”<br/>3. System sent account lock notification email to user account<br/>4. Use case resume at main flow step 1
+
+
+Use Case ID | 3
+:---------- | :-
+Use Case Name | Reset Password
+Primary Actor | User
+Secondary Actor | None
+Description | User reset 
+Pre-Condition | User forget password
+Post-Condition | Reset successfully
+Normal Flow | 1. Prompt user to enter email and handphone<br/>2. Verify input<br/>3. Sent email that contain link to “directly” input new password
+Alternative Flow | **2a. Invalid input**<br/>Use case resume to main flow step 1
