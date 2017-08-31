@@ -39,7 +39,8 @@
 
 ## Use Case: 
 
-<a name="use_case_1"></a>
+<a name="use_case_1"></a>  
+
 Use Case ID | 1 
 :---------- | :-
 Use Case Name | Registration for One-Stock
@@ -52,6 +53,7 @@ Normal Flow | 1. User inputs required fields in the Registration Page <br/> 2. U
 Alternative Flow | **3a invalid Input** <br/> 1.The system prompts for re-enter <br/> 2.Use case resumes at main flow step 1 <br/> **7a Invalid username and password** <br/> 1.The system display "Invalid username and password" message <br/>2.The system prompts for username and password <br/>3.Use case resumes at main flow step 7
 
 <a name="use_case_2"></a>
+
 Use Case ID | 2 
 :---------- | :-
 Use Case Name | Login
@@ -64,6 +66,7 @@ Normal Flow | 1. User input username and password<br/>2. User input the captcha 
 Alternative Flow  | **3a. Invalid input**<br/>1. System prompt “Invalid username/password”<br/>2. Use case resume at main flow step 1<br/>**3b. Invalid input 3 times for valid username**<br/>1. System prompt “Invalid username/password”<br/>2. System change account status to “Lock”<br/>3. System sent account lock notification email to user account<br/>4. Use case resume at main flow step 1
 
 <a name="use_case_3a"></a>
+
 Use Case ID | 3a 
 :---------- | :-
 Use Case Name | Reset Password with valid username
@@ -76,6 +79,7 @@ Normal Flow | 1. User enter the valid username and wrong password more than 3 ti
 Alternative Flow | **3a. Session link expire**<br/>Will be redirected to forget password page.<br/>Use case end.
 
 <a name="use_case_3b"></a>
+
 Use Case ID | 3b 
 :---------- | :-
 Use Case Name | Forget Password
@@ -88,6 +92,7 @@ Normal Flow | 1. User click on the reset password link<br/>2. System redirect to
 Alternative Flow | **4a. Invalid input**<br/>1. System prompt error message<br/> 2.Use case resume at main flow step 3
 
 <a name="use_case_3c"></a>
+
 Use Case ID | 3c 
 :---------- | :-
 Use Case Name | change password
