@@ -1,12 +1,10 @@
 # User_Case_Description
 
-[Use Case 1: Registration](#use_case_1)
-[Use Case 2: Login](#use_case_2)
-[Use Case 3a: Reset password with valid username](#use_case_3a)
-[Use Case 3b: Forget password](#use_case_3b)
-[Use Case 3c: Change password](#use_case_3c)
-
-
+[Use Case 1: Registration](#use_case_1)  
+[Use Case 2: Login](#use_case_2)  
+[Use Case 3a: Reset password with valid username](#use_case_3a)  
+[Use Case 3b: Forget password](#use_case_3b)  
+[Use Case 3c: Change password](#use_case_3c)  
 
 **Target Customer**
 - Individual Seller (SellerInfo)
