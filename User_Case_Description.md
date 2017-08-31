@@ -1,11 +1,13 @@
 # User_Case_Description
-Target Customer: Individual Seller
+
+**Target Customer**
+- Individual Seller (SellerInfo)
 
 **Problem Statement:** Individual Seller need an Inventory System that is user-friendly and convenient for the seller to manage their stock
 
 **Register for E-Commerce seller** --> ask if they have an account in One-Stock, if yes then login with that account then extract the user details and ask the user to fill in the extra information
 
-**SellerInfo**
+## SellerInfo 
 - First Name 
 - Last Name
 - NRIC/FIN (Pk)
@@ -16,7 +18,7 @@ Target Customer: Individual Seller
 - Gender
 - Nationality
 
-**User Database Version 1**
+## User Database Version 1
 - First Name 
 - Last Name
 - NRIC/FIN (Pk)
@@ -29,8 +31,7 @@ Target Customer: Individual Seller
 - Password
 - Status
 
-**Target Customer**
-- Individual Seller (SellerInfo)
+## Use Case:
 
 Use Case ID | 1
 :---------- | :-
