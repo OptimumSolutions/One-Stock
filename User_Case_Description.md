@@ -1,4 +1,6 @@
 # User_Case_Description
+1. [something](#something)
+2. [Use Case](#use_case)
 
 **Target Customer**
 - Individual Seller (SellerInfo)
@@ -7,7 +9,7 @@
 
 **Register for E-Commerce seller** --> ask if they have an account in One-Stock, if yes then login with that account then extract the user details and ask the user to fill in the extra information
 
-## SellerInfo 
+## SellerInfo <a name="something"></a>
 - First Name 
 - Last Name
 - NRIC/FIN (Pk)
@@ -31,7 +33,7 @@
 - Password
 - Status
 
-## Use Case:
+## Use Case: <a name="use_case"></a>
 
 Use Case ID | 1
 :---------- | :-
