@@ -125,3 +125,14 @@ Alternative Flow
 System prompt error message
 Use case resume at main flow step 3
 
+
+Use Case ID | 3c
+:---------- | :-
+Use Case Name | change password
+Primary Actor | User
+Secondary Actor | None
+Description | User change password after login
+Precondition | User has successfully login
+PostCondition | password change successfully
+Normal Flow | 1. User click `change password` in `account` page<br/> 2. User input old password and new password twice <br/> 3. System verify old pwd and validate new pwd <br/> 4. system update database accordingly <br/>5. password changed successfully <br/> 
+Alternative Flow | **3a invalid Input** <br/> 1.The system prompts for re-enter <br/> 2.Use case resumes at main flow step 2
