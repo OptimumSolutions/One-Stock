@@ -67,13 +67,61 @@ Normal Flow | 1. User input username and password<br/>2. User input the captcha 
 Alternative Flow  | **3a. Invalid input**<br/>1. System prompt “Invalid username/password”<br/>2. Use case resume at main flow step 1<br/>**3b. Invalid input 3 times for valid username**<br/>1. System prompt “Invalid username/password”<br/>2. System change account status to “Lock”<br/>3. System sent account lock notification email to user account<br/>4. Use case resume at main flow step 1
 
 
-Use Case ID | 3
-:---------- | :-
-Use Case Name | Reset Password
-Primary Actor | User
-Secondary Actor | None
-Description | User reset 
-Pre-Condition | User forget password
-Post-Condition | Reset successfully
-Normal Flow | 1. Prompt user to enter email and handphone<br/>2. Verify input<br/>3. Sent email that contain link to “directly” input new password
-Alternative Flow | **2a. Invalid input**<br/>Use case resume to main flow step 1
+Use Case ID
+3a
+Use Case Name
+Reset Password with valid username
+Primary Actor
+User
+Secondary Actor
+None
+Description
+with the correct username and wrong password more than 3 times
+and an email with a session link will be send out to the user.
+Pre-Condition
+Key in with the correct username and wrong password more than 3 times
+Post-Condition
+An email with a session link will be send out to the user
+Normal Flow
+User enter the valid username and wrong password more than 3 times
+System change the account status to lock
+Sent email that contain an session link to the user
+Directly go to reset password page when user click the given link in the email
+User directly change password
+System update password and change account status to “active”
+
+Alternative Flow
+3a. Session link expire
+Will be redirected to forget password page.
+Use case end.
+
+
+
+
+Use Case ID
+3b
+Use Case Name
+Forget Password
+Primary Actor
+User
+Secondary Actor
+None
+Description
+User forget either/both password and handphone number and use the forget password function to reset/recover their password
+Pre-Condition
+Owns an account
+Forget either/both password and handphone number
+Post-Condition
+reset/recover their password
+Normal Flow
+User click on the reset password link
+System redirect to reset password page
+User enter valid email and handphone number
+System verify input
+Use case continue at use case ID 3a: step 3
+
+Alternative Flow
+4a. Invalid input
+System prompt error message
+Use case resume at main flow step 3
+
