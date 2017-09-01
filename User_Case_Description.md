@@ -142,7 +142,7 @@ Secondary Actor | None
 Description | Display products to user based on the criteria that user give
 Precondition | User has successfully login
 PostCondition | Display products 
-Normal Flow | 1. User click `display product` in `home` page<br/> 2. system display product list grouped by `update date`. <br/> 3. User choose `month` (mmm-yyyy) and `catergory` then click `display` <br/> 4. system display product accordingly
+Normal Flow | 1. User click `display product` in `home` page<br/> 2. system display product list grouped by `update date`. <br/> 3. User choose `month` (mmm-yyyy) and `catergory` then click `display` <br/> 4. system display product accordingly <br/> 5. User click `item name` to display item details
 Alternative Flow | None
 
 [Top](#Top)  
