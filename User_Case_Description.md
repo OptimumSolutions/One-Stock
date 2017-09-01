@@ -8,6 +8,7 @@
 [Use Case 4: Add stock](#use_case_4)  
 [Use Case 5: Display stock](#use_case_5)  
 [Use Case 6: Update stock](#use_case_6)  
+[Use Case 7: Search stock](#use_case_7)  
 
 **Target Customer**
 - Individual Seller (SellerInfo)
@@ -162,5 +163,17 @@ Alternative Flow | **Alternate flow 1:**<br/><br/>**2a. Product display error**<
 
 [Top](#Top)  
 
+<a name="use_case_7"></a>
 
+Use Case ID | 7 
+:---------- | :-
+Use Case Name | Search product
+Primary Actor | User
+Secondary Actor | None
+Description | Allow the user to search their item within our website 
+Precondition | User successfully login to One-Stock
+PostCondition | DUser has successfully search their items
+Normal Flow | 1. User select the search bar in the menu bar <br/> 2. User input the item keyword they want to search <br/> 3. System autocomplete the keyword and search for relevant result <br/> 4. System display the items that contain the keyword (will be using display page)
+Alternative Flow | None
 
+[Top](#Top)  
