@@ -5,9 +5,9 @@
 [Use Case 3a: Reset password with valid username](#use_case_3a)  
 [Use Case 3b: Forget password](#use_case_3b)  
 [Use Case 3c: Change password](#use_case_3c)  
-[Use Case 4: Add product](#use_case_4)  
-[Use Case 5: Display product](#use_case_5)  
-[Use Case 6: Update product](#use_case_6)  
+[Use Case 4: Add stock](#use_case_4)  
+[Use Case 5: Display stock](#use_case_5)  
+[Use Case 6: Update stock](#use_case_6)  
 
 **Target Customer**
 - Individual Seller (SellerInfo)
@@ -117,6 +117,21 @@ Alternative Flow | **3a invalid Input** <br/> 1.The system prompts for re-enter 
 
 [Top](#Top)  
 
+<a name="use_case_4"></a>
+
+Use Case ID | 4 
+:---------- | :-
+Use Case Name | Add stock
+Primary Actor | User
+Secondary Actor | None
+Description | Add new items
+Precondition | User has successfully login
+PostCondition | Add new items succefully
+Normal Flow | 1. User click `Add stock` in `home` page <br/> 2. User input details of new item. <br/> 3. Click `Add`<br/> 4. system validate input <br/> 5. system prompt "confirmation" <br/> 6. User click `Confirm` <br/> 7. system update database <br/> 8. Add new items succefully <br/> 9. system prompt "Successful" <br/> 10.redirect to useCase_5
+Alternative Flow | **4a invalid input** <br/> 1. system prompt "invalid input" <br/> 2. use case resumes at main flow step-2 <br/>  **6a User click `cancle`** <br/> 1. use case resumes at main flow step-2
+
+[Top](#Top)  
+
 <a name="use_case_5"></a>
 
 Use Case ID | 5 
@@ -146,7 +161,6 @@ Normal Flow | **Main flow 1:**<br/><br/> 1. User enters the `update inventory` m
 Alternative Flow | **Alternate flow 1:**<br/><br/>**2a. Product display error**<br/> 1. System prompt user that display fail, ask user to refresh page again.<br/> 2. Use case end<br/>**5a. Cancel confirmation**<br/> 1. Use case resume at main flow 1 step 3<br/>**6a. Update fail**<br/> 1. System prompt update fail, ask user to try again later<br/> 2. Use case resume at main flow 1 step 2<br/><br/>**Alternate flow 2:**<br/><br/>**2a. Product display error**<br/> 1. System prompt user that display fail, ask user to refresh page again.<br/> 2. Use case end<br/>**5a. Product detail display error**<br/> 1. System prompt user that display fail, ask user to try again.<br/> 2. Use case resume at main flow 2 step 2<br/>**7a. Invalid input**<br/> 1. System prompt user which input validation fail<br/> 2. Use case resume at main flow 2 step 6<br/>**9a. Cancel confirmation**<br/> 1. Use case resume at main flow 2 step 6<br/>**10a. Update fail**<br/> 1. System prompt update fail, ask user to try again later<br/> 2. Use case resume at main flow 2 step 6
 
 [Top](#Top)  
-
 
 
 
