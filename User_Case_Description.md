@@ -10,6 +10,7 @@
 [Use Case 6: Update stock](#use_case_6)  
 [Use Case 7: Search stock](#use_case_7)  
 
+test
 **Target Customer**
 - Individual Seller (SellerInfo)
 
