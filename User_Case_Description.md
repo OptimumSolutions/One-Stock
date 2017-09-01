@@ -5,6 +5,9 @@
 [Use Case 3a: Reset password with valid username](#use_case_3a)  
 [Use Case 3b: Forget password](#use_case_3b)  
 [Use Case 3c: Change password](#use_case_3c)  
+[Use Case 4: Add product](#use_case_4)  
+[Use Case 5: Display product](#use_case_5)  
+
 
 **Target Customer**
 - Individual Seller (SellerInfo)
@@ -103,3 +106,17 @@ Precondition | User has successfully login
 PostCondition | password change successfully
 Normal Flow | 1. User click `change password` in `account` page<br/> 2. User input old password and new password twice <br/> 3. System verify old pwd and validate new pwd <br/> 4. system update database accordingly <br/>5. password changed successfully <br/> 
 Alternative Flow | **3a invalid Input** <br/> 1.The system prompts for re-enter <br/> 2.Use case resumes at main flow step 2
+
+<a name="use_case_5"></a>
+
+Use Case ID | 5 
+:---------- | :-
+Use Case Name | Display product
+Primary Actor | User
+Secondary Actor | None
+Description | Display products to user based on the criteria that user give
+Precondition | User has successfully login
+PostCondition | Display products 
+Normal Flow | 1. User click `display product` in `home` page<br/> 2. system display product list grouped by `update date`. <br/> 3. User choose `month` (mmm-yyyy) and `catergory` then click `display` <br/> 4. system display product accordingly
+Alternative Flow | None
+
