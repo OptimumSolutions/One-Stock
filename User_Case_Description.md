@@ -172,7 +172,7 @@ Primary Actor | User
 Secondary Actor | None
 Description | Allow the user to search their item within our website 
 Precondition | User successfully login to One-Stock
-PostCondition | DUser has successfully search their items
+PostCondition | User has successfully search their items
 Normal Flow | 1. User select the search bar in the menu bar <br/> 2. User input the item keyword they want to search <br/> 3. System autocomplete the keyword and search for relevant result <br/> 4. System display the items that contain the keyword (will be using display page)
 Alternative Flow | None
 
