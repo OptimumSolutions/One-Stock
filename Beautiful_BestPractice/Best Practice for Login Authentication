@@ -1,27 +1,45 @@
-**1. Use SSL (https) for anything involving authentication**
+1. Use SSL (https) for anything involving authentication
+ 
 
-**2. Use POST for anything submitting sensitive information (and in general, don’t write sensitive information into logs)**
+2. Use POST for anything submitting sensitive information
+(and in general, don’t write sensitive information into logs)
 
-**3. Hash your passwords with a strong, certified, and slow cryptographic one-way hashing scheme**
 
-**4. Salt your hashes, using a separate salt for each string you hash**
+3. Hash your passwords with a strong, certified, and slow
+cryptographic one-way hashing scheme
 
-**5. Store your sensitive data separate from your regular data**
 
-**6. Give your users the freedom to use whatever passwords they want, above minimum security thresholds**
+4. Salt your hashes, using a separate salt for each string
+you hash
 
-**7. Put a reasonable upper limit on access attempts from a single location in a given time frame, and tell the user about failed access attempts**
 
-**8. Use a single failure message regardless of whether a user is valid or a password was wrong**
+5. Store your sensitive data separate from your regular data
 
-**9. Don’t use “security questions” – they’re anything but**
 
-## Advance Method
+6. Give your users the freedom to use whatever passwords
+they want, above minimum security thresholds
 
-**1. Two-factor authentication**
 
-**2. Email verification for unknown access locations**
+7. Put a reasonable upper limit on access attempts from a
+single location in a given time frame, and tell the user about failed access
+attempt
+ 
 
-**3. Account knowledge test for unknown access locations**
+8. Use a single failure message regardless of whether a user
+is valid or a password was wrong
+ 
 
-**4. Don’t force frequent password changes**
+9. Don’t use “security questions” – they’re anything but
+
+ 
+
+ Advance Method
+
+1. Two-factor authentication
+
+2. Email verification for unknown access locations
+
+3. Account knowledge test for unknown access locations
+
+4. Don’t force frequent password changes
+
