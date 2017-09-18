@@ -15,7 +15,7 @@
 3. clone reposity
 4. working tree - import project
 
-After that
+## After that
 1. Pull 
 2. edit
 3. commit and push
